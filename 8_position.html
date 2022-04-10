@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        body{
+            background: #00AFC1 ;;
+        }
+        
+        #container{
+            position: relative;
+            height: 200vh;
+        }
+
+        #sun{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+
+        }
+
+        .cloud{
+            position: fixed;
+            width: 80px;
+            height: 80px;
+        }
+
+        .cloud.one{
+            top: 30px;
+            right: 180px;
+        }
+        .cloud.two{
+            top: 50px;
+            right: 50%;
+        }
+        .cloud.three{
+            top: 140px;
+            right: 80%;
+        }
+
+        #grass{
+            position: absolute;
+            top: 25%;
+            background: #B6FFCE;
+            height: 200vh;
+            width: 100%;
+            border-radius: 50% 50% 0px 0px;
+        }
+
+
+        #forest{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%);
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            
+            box-sizing: border-box;
+            width: 90%;
+            height: 200vh;
+            
+            border-radius: 50% 50% 0px 0px;     
+        }
+
+        #treeline{
+            position: sticky;
+            top: 10px;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            width: 100%;       
+        }
+
+
+        .separar{
+            background: #B6FFCE;
+            height: 50px;
+        }
+
+        .tree{
+            width: 80px;
+        }
+
+        .tree.five, .tree.one{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="sun" src="https://cdn-icons-png.flaticon.com/512/2698/2698194.png" alt="">
+        <img class="cloud one" src="https://cdn-icons.flaticon.com/png/512/3222/premium/3222798.png?token=exp=1649610029~hmac=03edc6381312b7053992bf9d1c4cd431" alt="">
+        <img class="cloud two" src="https://cdn-icons.flaticon.com/png/512/3222/premium/3222798.png?token=exp=1649610029~hmac=03edc6381312b7053992bf9d1c4cd431" alt="">
+        <img class="cloud three" src="https://cdn-icons.flaticon.com/png/512/3222/premium/3222798.png?token=exp=1649610029~hmac=03edc6381312b7053992bf9d1c4cd431" alt="">
+        
+        <div id="grass"></div>
+
+        <div id="forest">
+            <div id="treeline">
+                <img class="tree" src="" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">    
+                <img class="tree" src="" alt="">        
+            </div>
+            <div id="treeline">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">    
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">        
+            </div>
+            <div id="treeline">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">    
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">        
+            </div>
+            <div id="treeline">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">    
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">        
+            </div>
+            <div id="treeline">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">    
+                <img class="tree" src="https://cdn-icons.flaticon.com/png/512/2713/premium/2713505.png?token=exp=1649610111~hmac=b29e04d1f52cbe9af4baa24e17a1588d" alt="">        
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
